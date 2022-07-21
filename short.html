@@ -1,4 +1,16 @@
-<iframe src="https://g0yisb389b.execute-api.eu-west-2.amazonaws.com/default/boredapiLambda" title="boredapi"></iframe>
-<iframe src="https://pdr36gln5c.execute-api.eu-west-2.amazonaws.com/default/requestJoke" title="jokeapi"></iframe>
-<iframe src="https://buq9d7xzdc.execute-api.eu-west-2.amazonaws.com/default/requestFact" title="factapi"></iframe>
-<iframe src="https://w1vblrsx5k.execute-api.eu-west-2.amazonaws.com/default/requestNumberFact" title="numbersapi"></iframe>
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function resizeIframe(obj) {
+                obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            }
+        </script>
+    </head>
+    <body>
+        <iframe src="https://g0yisb389b.execute-api.eu-west-2.amazonaws.com/default/boredapiLambda" title="boredapi" frameBorder=0 scrolling="no" onload="resizeIframe(this)"></iframe>
+        <iframe src="https://pdr36gln5c.execute-api.eu-west-2.amazonaws.com/default/requestJoke" title="jokeapi" frameBorder=0 scrolling="no" onload="resizeIframe(this)"></iframe>
+        <iframe src="https://buq9d7xzdc.execute-api.eu-west-2.amazonaws.com/default/requestFact" title="factapi" frameBorder=0 scrolling="no" onload="resizeIframe(this)"></iframe>
+        <iframe src="https://w1vblrsx5k.execute-api.eu-west-2.amazonaws.com/default/requestNumberFact" title="numbersapi" frameBorder=0 scrolling="no" onload="resizeIframe(this)"></iframe>
+    </body>
+</html>

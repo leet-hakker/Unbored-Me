@@ -1,3 +1,16 @@
-<iframe src="https://g0yisb389b.execute-api.eu-west-2.amazonaws.com/default/boredapiLambda" title="boreapi"></iframe>
-<iframe src="https://t4s23tbiqc.execute-api.eu-west-2.amazonaws.com/default/requestOpenLibraryBook" title="openlibrary"></iframe>
-<iframe src="https://201y69pvb0.execute-api.eu-west-2.amazonaws.com/default/randomShow" title="tvmaze"></iframe>
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function resizeIframe(obj) {
+                obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+            }
+        </script>
+        <link href="css/long.css" rel="stylesheet" />
+    </head>
+    <body>
+        <iframe src="https://g0yisb389b.execute-api.eu-west-2.amazonaws.com/default/boredapiLambda" title="boreapi" frameBorder=0 scrolling="no" onload="resizeIframe(this)"></iframe>
+        <iframe src="https://t4s23tbiqc.execute-api.eu-west-2.amazonaws.com/default/requestOpenLibraryBook" title="openlibrary" frameBorder=0 scrolling="no" onload="resizeIframe(this)"></iframe>
+        <iframe src="https://201y69pvb0.execute-api.eu-west-2.amazonaws.com/default/randomShow" title="tvmaze" frameBorder=0 scrolling="no" onload="resizeIframe(this)"></iframe>
+    </body>
+</html>
