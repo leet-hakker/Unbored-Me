@@ -1,15 +1,50 @@
 <!doctype html>
 <html lang="">
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Unbored Me!</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unbored Me!</title>
 
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+        function redirectToPage(value) {
+            if (value == "long") {
+                location.href = 'long.html';
+            }
+            if (value == "short") {
+                location.href = 'short.html';
+            }
+        }
+    </script>
 
 </head>
 <body class="page-home">
     <h1>Unbored Me!</h1>
+    <script type="text/javascript">
+        function redirect() {
+        var textValue = document.querySelector('input[name="activityLength"]:checked').value;
+        if(textValue == "long")
+        {
+            location.href = "long.html";
+        }
+        else if(textValue == "short")
+        {
+            location.href = "short.html";
+        }
+    }
+    </script>
+
+    <form action="javascript:redirect();">
+
+        <input type="radio" id="answer" name="activityLength" value="long"><label for="activityLength">Give me an activity for longer than an hour.</label><br>
+        <input type="radio" id="answer" name="activityLength" value="short"><label for="activityLength">Give me an activity that won't take too much time.</label><br>
+
+        <input type="submit" value="Submit" />
+
+    </form>
 </body>
 </html>
+
+
