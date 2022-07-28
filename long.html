@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <script>
             function resizeIframe(obj) {
                 obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
@@ -8,9 +9,12 @@
         </script>
         <link href="css/long.css" rel="stylesheet" />
     </head>
+    <header>
+        <button onclick="history.back()">Back</button>
+    </header>
     <body>
-        <iframe src="https://g0yisb389b.execute-api.eu-west-2.amazonaws.com/default/boredapiLambda" title="boreapi" frameBorder=0 scrolling="no" onload="resizeIframe(this)"></iframe>
-        <iframe src="https://t4s23tbiqc.execute-api.eu-west-2.amazonaws.com/default/requestOpenLibraryBook" title="openlibrary" frameBorder=0 scrolling="no" onload="resizeIframe(this)"></iframe>
-        <iframe src="https://201y69pvb0.execute-api.eu-west-2.amazonaws.com/default/randomShow" title="tvmaze" frameBorder=0 scrolling="no" onload="resizeIframe(this)"></iframe>
+        <iframe src="https://g0yisb389b.execute-api.eu-west-2.amazonaws.com/default/boredapiLambda" title="boreapi" frameBorder=0 scrolling="no"></iframe>
+        <iframe src="https://t4s23tbiqc.execute-api.eu-west-2.amazonaws.com/default/requestOpenLibraryBook" title="openlibrary" frameBorder=0></iframe>
+        <iframe src="https://201y69pvb0.execute-api.eu-west-2.amazonaws.com/default/randomShow" title="tvmaze" frameBorder=0 scrolling="no"></iframe>
     </body>
 </html>
